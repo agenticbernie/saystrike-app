@@ -59,7 +59,8 @@ requests, and manual dispatch, and uploads an artifact named
 This is an installable demo artifact, not a Play Store release. The workflow
 generates the Android project with Expo prebuild during the build, so Gradle
 dependency caching is not enabled by `setup-java` before those Gradle files
-exist.
+exist. It uses `setup-android@v4` for current command-line tools and installs
+the required platform-tools, Android platform, build-tools, and NDK packages.
 
 ## Device checks and limits
 
