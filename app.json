@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "SayStrike",
+    "slug": "saystrike",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.saystrike.app"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "recordAudioAndroid": true,
+          "enableBackgroundRecording": false,
+          "enableBackgroundPlayback": false
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26
+          }
+        }
+      ],
+      "expo-font",
+      "expo-status-bar"
+    ]
+  }
+}

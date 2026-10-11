@@ -1,0 +1,35 @@
+{
+  "name": "saystrike",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "expo/AppEntry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "prebuild:android": "expo prebuild --platform android",
+    "build:android-apk": "bash scripts/build-android-apk.sh",
+    "test": "node --test",
+    "typecheck": "tsc --noEmit",
+    "check:expo-deps": "expo install --check"
+  },
+  "dependencies": {
+    "@expo-google-fonts/inter": "^0.4.2",
+    "@expo-google-fonts/space-mono": "^0.4.2",
+    "expo": "~57.0.23",
+    "expo-audio": "~57.0.5",
+    "expo-build-properties": "~57.0.22",
+    "expo-file-system": "~57.0.7",
+    "expo-font": "~57.0.4",
+    "expo-speech": "~57.0.3",
+    "expo-status-bar": "~57.0.1",
+    "expo-system-ui": "~57.0.4",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.0",
+    "typescript": "~6.0.3"
+  }
+}
