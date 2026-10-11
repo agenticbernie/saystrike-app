@@ -56,7 +56,10 @@ an unrated result.
 `.github/workflows/android-apk.yml` builds the internal demo APK on pushes, pull
 requests, and manual dispatch, and uploads an artifact named
 `saystrike-demo-apk`. Download it from that workflow run's **Artifacts** area.
-This is an installable demo artifact, not a Play Store release.
+This is an installable demo artifact, not a Play Store release. The workflow
+generates the Android project with Expo prebuild during the build, so Gradle
+dependency caching is not enabled by `setup-java` before those Gradle files
+exist.
 
 ## Device checks and limits
 
