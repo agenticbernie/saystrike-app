@@ -40,7 +40,7 @@ if [[ ! -x "$aapt" ]]; then
   exit 1
 fi
 
-sdk_line="$("$aapt" dump badging "$apk" | grep -m 1 '^sdkVersion:')"
+sdk_line="$("$aapt" dump badging "$apk" | grep '^sdkVersion:')"
 if [[ "$sdk_line" != "sdkVersion:'26'" ]]; then
   echo "Expected built APK minimum SDK 26, observed: ${sdk_line:-missing}" >&2
   exit 1
